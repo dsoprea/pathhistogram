@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/dsoprea/pathhistogram.svg?branch=master)](https://travis-ci.org/dsoprea/pathhistogram)
+[![Coverage Status](https://coveralls.io/repos/github/dsoprea/pathhistogram/badge.svg?branch=master)](https://coveralls.io/github/dsoprea/pathhistogram?branch=master)
+
 # Overview
 
 This is a tool that visualizes the distribution of file-sizes under a given directory (recursively) from the command-line.
