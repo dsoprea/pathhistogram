@@ -51,8 +51,11 @@ class TestHistogram(unittest.TestCase):
 
             self.assertEquals(int(slice_size), 43791)
 
+            for i, files in binned_files.copy().items():
+                binned_files[i] = sorted(files)
+
             expected = {
-                0: ['file20', 'file14', 'file15', 'file9', 'file21', 'file19', 'file17', 'file12', 'file18', 'file3', 'file5', 'file4', 'file23', 'file2', 'file6', 'file13', 'file8', 'file16', 'file7', 'file0', 'file10', 'file1', 'file11', 'file22'],
+                0: sorted(['file20', 'file14', 'file15', 'file9', 'file21', 'file19', 'file17', 'file12', 'file18', 'file3', 'file5', 'file4', 'file23', 'file2', 'file6', 'file13', 'file8', 'file16', 'file7', 'file0', 'file10', 'file1', 'file11', 'file22']),
                 1: ['file24', 'file25'],
                 2: ['file26'],
                 3: [],
@@ -91,9 +94,12 @@ class TestHistogram(unittest.TestCase):
 
             self.assertEquals(int(slice_size), 220)
 
+            for i, files in binned_files.copy().items():
+                binned_files[i] = sorted(files)
+
             expected = {
-                0: ['file12', 'file10', 'file1', 'file11'],
-                1: ['file14', 'file13'],
+                0: ['file1', 'file10', 'file11', 'file12'],
+                1: ['file13', 'file14'],
                 2: ['file15'],
                 3: [],
                 4: ['file16'],
