@@ -1,2 +1,4 @@
 /pathhistogram.egg-info/
 /.coverage
+__pycache__
+/dist/
