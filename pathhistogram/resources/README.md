@@ -6,6 +6,11 @@
 This is a tool that visualizes the distribution of file-sizes under a given directory (recursively) from the command-line.
 
 
+# Requirements
+
+This is a Python 3 project.
+
+
 # Install
 
 Via Git:
