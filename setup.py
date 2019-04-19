@@ -18,6 +18,7 @@ setuptools.setup(
     version=pathhistogram.__version__,
     description="A tool to generate histograms of file-sizes",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Dustin Oprea',
     author_email='myselfasunder@gmail.com',
     url='https://github.com/dsoprea/pathhistogram',
